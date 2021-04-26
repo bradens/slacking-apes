@@ -1,0 +1,3 @@
+build-%:
+	cp -R * $(ARTIFACTS_DIR)
+	chmod -R ugo+rwx $(ARTIFACTS_DIR)

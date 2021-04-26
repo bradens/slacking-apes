@@ -1,0 +1,7 @@
+dist
+node_modules
+.DS_Store
+env.json
+build
+.aws-sam
+.env
