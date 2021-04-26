@@ -6,6 +6,5 @@ stack_name = "ape"
 s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-riae5mjcbmbb"
 s3_prefix = "ape"
 region = "us-west-2"
-profile = "hsc"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
