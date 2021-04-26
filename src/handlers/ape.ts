@@ -33,7 +33,6 @@ const fetchData = async <T extends Currency>(
 export const handler = async (
   event: APIGatewayProxyEvent
 ): Promise<APIGatewayProxyResult> => {
-  console.log("event", event);
   const [ethData, binanceData] = await Promise.all([
     fetchData(Currency.ETH),
     fetchData(Currency.BNB),
