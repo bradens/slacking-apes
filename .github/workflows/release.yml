@@ -20,9 +20,15 @@ jobs:
       - name: SAM Validate
         run: |
           sam validate
+      - name: Yarn
+        run: |
+          yarn install
+      - name: build
+        run: |
+          NODE_ENV=production yarn build
       - name: SAM Build
         run: |
-          sam build --use-container
+          sam build
       - name: SAM Deploy
         run: |
           sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
