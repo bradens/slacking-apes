@@ -72,12 +72,12 @@ export const handler = async (
         type: "context",
         elements: [
           {
-            type: "plain_text",
+            type: "mrkdwn",
             text: `🕛 ${getTimeRemaining()}`,
             emoji: true,
           },
           {
-            type: "plain_text",
+            type: "mrkdwn",
             text: `Updated: ${moment(
               ethData.ethereum.last_updated_at * 1000
             ).format("hh:mm:ss utc")}`,
