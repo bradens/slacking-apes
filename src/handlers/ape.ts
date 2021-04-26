@@ -73,8 +73,7 @@ export const handler = async (
         elements: [
           {
             type: "mrkdwn",
-            text: `🕛 ${getTimeRemaining()}`,
-            emoji: true,
+            text: `:clock1: ${getTimeRemaining()}`,
           },
           {
             type: "mrkdwn",
