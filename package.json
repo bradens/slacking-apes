@@ -13,7 +13,6 @@
     "start:api": "sam local start-api --port 3002 --skip-pull-image --warm-containers LAZY",
     "postbuild": "./postbuild.sh",
     "dev": "rm -rf .aws-sam && concurrently 'yarn watch' 'NODE_ENV=development yarn start:api'",
-    "prod": "rm -rf .aws-sam && concurrently 'yarn watch' 'yarn start:api'",
     "lint": "tsc --noEmit && eslint . --ext ts"
   },
   "dependencies": {
