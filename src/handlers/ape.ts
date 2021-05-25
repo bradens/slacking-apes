@@ -39,9 +39,9 @@ export const handler = async (
   ]);
 
   const ethEnd = ethData.ethereum.usd;
-  const ethDelta = -100 * ((ethStart - ethEnd) / ((ethStart + ethEnd) / 2));
+  const ethDelta = (ethEnd - ethStart) / ethStart * 100 
   const bnbEnd = binanceData.binancecoin.usd;
-  const bnbDelta = -100 * ((bnbStart - bnbEnd) / ((bnbStart + bnbEnd) / 2));
+  const bnbDelta = (bnbEnd - bnbStart) / bnbStart * 100
   let winner, loser;
   const atbrett = "<@U01MEB6EC8P|brett>";
   const atmike = "<@U03PC0K23|mike>";
